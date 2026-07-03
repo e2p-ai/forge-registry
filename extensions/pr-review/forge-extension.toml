@@ -1,0 +1,5 @@
+name = "pr-review"
+version = "0.1.0"
+description = "Two-step PR-review recipe: gather context, then produce a severity-ranked review."
+author = "e2p-ai"
+recipes = ["recipes/pr-review.toml"]

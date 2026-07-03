@@ -1,0 +1,28 @@
+description = "Review a GitHub PR end-to-end"
+persona     = "overwatch"
+voice       = "claude"
+budget      = 1.50
+
+[[step]]
+prompt = """
+We are reviewing PR #{{args.pr}} on this repo.
+
+1. Use the Bash tool to run `gh pr view {{args.pr}} --json title,body,baseRefName,headRefName,additions,deletions,changedFiles`.
+2. Use Bash to run `gh pr diff {{args.pr}}`.
+3. Pick the 5 most-changed files and use Read to inspect each (file context, not just the diff).
+
+When you have read enough, respond with a single sentence: "ready to review N files, ~M lines."
+"""
+
+[[step]]
+prompt = """
+Now produce the review.
+
+Format:
+1. **Summary** — one paragraph describing what the PR does and why.
+2. **Severity table** — markdown table with columns: severity (high/medium/low), file:line, observation, suggested fix.
+3. **Tests** — what's tested, what isn't, what should be.
+4. **Decision** — approve / request changes / comment, with one sentence justification.
+
+Be concrete. Cite file:line for every observation. No vague "consider improving" advice.
+"""

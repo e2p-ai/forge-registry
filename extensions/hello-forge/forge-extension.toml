@@ -1,0 +1,5 @@
+name = "hello-forge"
+version = "0.1.0"
+description = "A friendly hello-world extension: installs the /hello-forge command."
+author = "e2p-ai"
+commands = ["commands/hello-forge.md"]

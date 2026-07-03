@@ -1,0 +1,53 @@
+# forge community registry
+#
+# One [[entry]] per installable. `forge registry search|install|list` reads this
+# index. To publish your own, open a PR that appends an [[entry]] (see README.md).
+#
+# Fields:
+#   name               unique slug, [a-zA-Z0-9_-]
+#   kind               extension | plugin | skill | persona | command
+#   description        one line, shown in search/list
+#   repo               owner/name on GitHub where the asset lives
+#   path               path within repo (file for command/persona, dir otherwise)
+#   license            SPDX id — shown before install
+#   sha256             optional pin over the entry's primary file
+#   min_forge_version  optional minimum forge version
+
+version = 1
+
+[[entry]]
+name = "hello-forge"
+kind = "extension"
+description = "A friendly hello-world extension: installs the /hello-forge command."
+repo = "e2p-ai/forge-registry"
+path = "extensions/hello-forge"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "reviewer"
+kind = "persona"
+description = "Skeptical code-review persona — finds problems before they ship, cites file:line."
+repo = "e2p-ai/forge-registry"
+path = "personas/reviewer.md"
+license = "Apache-2.0"
+sha256 = "6b6392c3e814834892fb6fbf07c5b936ad303b6889663fd04fcfc61e34d3d6db"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "pr-review"
+kind = "extension"
+description = "Two-step recipe that reviews a GitHub PR end to end (gather context, then rank findings)."
+repo = "e2p-ai/forge-registry"
+path = "extensions/pr-review"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "hello-forge-plugin"
+kind = "plugin"
+description = "Native sample plugin (dylib): a /hello slash command + HelloEcho tool. Requires --trust."
+repo = "e2p-ai/forge"
+path = "examples/plugins/hello-forge"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"

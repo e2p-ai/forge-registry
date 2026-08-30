@@ -51,3 +51,84 @@ repo = "e2p-ai/forge"
 path = "examples/plugins/hello-forge"
 license = "Apache-2.0"
 min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-money-gate"
+kind = "skill"
+description = "TGI shared skill tgi-money-gate"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-money-gate"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-email-gate"
+kind = "skill"
+description = "TGI shared skill tgi-email-gate"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-email-gate"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-handoff-9"
+kind = "skill"
+description = "TGI shared skill tgi-handoff-9"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-handoff-9"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-cash-brief"
+kind = "skill"
+description = "TGI shared skill tgi-cash-brief"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-cash-brief"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-journal-entry"
+kind = "skill"
+description = "TGI shared skill tgi-journal-entry"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-journal-entry"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-connector-routing"
+kind = "skill"
+description = "TGI shared skill tgi-connector-routing"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-connector-routing"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-company-projects"
+kind = "skill"
+description = "TGI shared skill tgi-company-projects"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-company-projects"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-ceo-ops"
+kind = "skill"
+description = "TGI shared skill tgi-ceo-ops"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-ceo-ops"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
+
+[[entry]]
+name = "tgi-mini2-grok-seat"
+kind = "skill"
+description = "TGI shared skill tgi-mini2-grok-seat"
+repo = "e2p-ai/forge-registry"
+path = "skills/tgi-mini2-grok-seat"
+license = "Apache-2.0"
+min_forge_version = "0.4.0"
